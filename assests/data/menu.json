@@ -54,8 +54,8 @@
       "MenuName": "who",
       "MenuLink": "who.html",
       "Menus": [{
-        "MenuName": "i",
-        "MenuLink": "i.html",
+        "MenuName": "myself",
+        "MenuLink": "myself.html",
         "Menus": [{
             "MenuName": "was then",
             "MenuLink": "was_then.html",
