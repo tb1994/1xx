@@ -65,7 +65,7 @@ a img {
 }
 
 body {
-  background-color: #3cb5f9;
+  background-color: #378537;
   color: #505050;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
@@ -78,14 +78,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: 300;
 }
-
+/*facebook link color*/
 a {
   text-decoration: none;
-  color: #3cb5f9;
+  color: #A6D900;
 }
-
+/*facebook link hover color*/
 a:hover {
-  color: #0793e2;
+  color: #076407;
 }
 
 /* =Template
@@ -124,14 +124,14 @@ section p:last-child {
 }
 
 section.color {
-  background-color: #3cb5f9;
+  background-color: #378537;
   color: white;
 }
 
 /* =Info Bar
 -------------------------------------------------------------- */
 #info-bar {
-  background-color: #3cb5f9;
+  background-color: #076407;
 }
 
 #info-bar a {
@@ -144,7 +144,7 @@ section.color {
 }
 
 #info-bar a:hover {
-  background-color: #0793e2;
+  background-color: #076407;
 }
 
 #info-bar span.all-tutorials,
@@ -173,7 +173,7 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #0683c9;
+  background-color: #076407;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   -ms-transition: height 0.3s;
@@ -205,7 +205,7 @@ header nav {
 header nav a {
   line-height: 150px;
   margin-left: 20px;
-  color: #9fdbfc;
+  color: #A6D900;
   font-weight: 700;
   font-size: 18px;
   -webkit-transition: all 0.3s;
@@ -214,9 +214,9 @@ header nav a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-
+/* menu letter hover color*/
 header nav a:hover {
-  color: white;
+  color: #FFEC00;
 }
 
 header.smaller {
@@ -231,7 +231,7 @@ header.smaller h1#logo {
 }
 
 header.smaller nav a {
-  line-height: 75px;
+  line-height: 32px;
 }
 
 /* =Footer
@@ -314,7 +314,7 @@ header.smaller nav a {
   }
 
   #info-bar span.all-tutorials {
-    border-bottom: solid 1px #0793e2;
+    border-bottom: solid 1px #076407;
   }
 }
 

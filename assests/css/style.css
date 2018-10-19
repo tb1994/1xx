@@ -3,7 +3,7 @@ nav {
   right: 250px;
   display: inline;
   position: fixed;
-  background: #FFF;
+  background: #1EAD00;
   z-index: 1000;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -41,7 +41,7 @@ nav ul li.current-menu-item {
 }
 
 nav ul li:hover {
-  background: #DDD;
+  background: #7EC100;
 }
 
 nav ul ul {
@@ -49,7 +49,7 @@ nav ul ul {
   position: absolute;
   top: 100%;
   left: 0px;
-  background: #f6f6f6;
+  background: #27E000;
   border: thin #225AA7 solid;
   padding: 0px;
   border-bottom-right-radius: 5px;
@@ -74,4 +74,18 @@ nav ul ul ul {
 
 nav ul li:hover>ul {
   display: block;
+}
+
+#loaderDiv {
+background: url("https://media.giphy.com/media/hxPKWYxyRixfq/giphy.gif") no-repeat center center fixed;
+position: fixed;
+z-index: 9999;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+opacity: 0.25;
+background-size: 120%;
+background-color: #FFFFFF;
+display: none;
 }
