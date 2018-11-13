@@ -29,3 +29,8 @@ inside out project version 100.0
     -fixed enlarging navigation on header shrink .
     -added loader to application with beevis and butthead
     -added some sick colors
+
+inside out project version 104.0
+-modifed the ajax call to get the json for the menu from the me.tbtestsite.com tbtestsite
+-modified the menubuilder function to accept the json data from word press rest api
+-removed data/menu.json from file system considering it is no longer needed 
