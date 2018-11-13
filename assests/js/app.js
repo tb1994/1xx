@@ -17,12 +17,14 @@ function init() {
 
   $.ajax({
     method: 'GET',
-    url: 'assests/data/menu.json',
+    url: 'http://me.tbtestsite.com/wp-json/wp-api-menus/v2/menus/2',
     dataType: 'json',
     success: function(data) {
 
-      var menu = menuBuilder(data.menu);
-      $('nav').append(menu);
+      $('nav').hide();
+
+      var menu = menuBuilder(data.items);
+      $('nav').html(menu).slideDown();
       $("#loaderDiv").fadeOut("slow");
 
 
@@ -44,11 +46,10 @@ function menuBuilder(obj) {
   if (obj.length > 0) {
     theMenu = theMenu + '<ul>';
     obj.forEach(function(item) {
-      theMenu = theMenu + '<li><a href="#">' + item.MenuName + '</a>';
-      console.log('item: ' + item.MenuName);
-      console.log('item: ' + item.Menus);
-      if (item.Menus.length > 0) {
-        theMenu = theMenu + menuBuilder(item.Menus);
+      theMenu = theMenu + '<li><a href="#">' + item.title + '</a>';
+
+      if (item.children) {
+        theMenu = theMenu + menuBuilder(item.children);
 
       }
       theMenu = theMenu + '<li>';
