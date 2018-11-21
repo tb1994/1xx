@@ -1,4 +1,12 @@
-/* css document */
+/* inside out project step-105 css document */
+#logo {
+  cursor: pointer;
+}
+
+#logo:hover {
+  color: #DA007B;
+}
+
 nav {
   right: 250px;
   display: inline;
@@ -77,15 +85,74 @@ nav ul li:hover>ul {
 }
 
 #loaderDiv {
-background: url("https://media.giphy.com/media/hxPKWYxyRixfq/giphy.gif") no-repeat center center fixed;
-position: fixed;
-z-index: 9999;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-opacity: 0.25;
-background-size: 120%;
-background-color: #FFFFFF;
-display: none;
+  background: url("https://media.giphy.com/media/hxPKWYxyRixfq/giphy.gif") no-repeat center center fixed;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.25;
+  background-size: 120%;
+  background-color: #FFFFFF;
+  display: none;
+}
+
+section {
+  min-height: 450px;
+}
+
+.circle {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 200px;
+  border: 5px solid #000;
+  box-shadow: 0 0 0 5px #086608;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.wave {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #086608;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50 rgba(0, 0, 0, .5);
+}
+
+.wave:before, .wave:after {
+  content: ' ';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+
+.wave:before {
+  border-radius: 50%;
+  background: rgba(100, 255, 100, 5);
+  animation: animate 7.5s linear infinite;
+}
+
+.wave:after {
+  border-radius: 25%;
+  background: rgba(100, 255, 100, .3);
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
 }
