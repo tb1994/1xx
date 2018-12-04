@@ -99,7 +99,7 @@ function getPage(obj) {
           scrollTop: 0
         }, 'slow');
         $(this).html(pgbuild).fadeIn();
-        $("loaderDiv").fadeOut("slow");
+        $("#loaderDiv").fadeOut("slow");
       });
     },
     error: function() {
