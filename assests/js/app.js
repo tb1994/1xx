@@ -40,7 +40,7 @@ function init() {
 
 $.ajax({
   method: 'GET',
-  url: 'http://me.tbtestsite.com/wp-json/wp-api-menus/v2/menus/3',
+  url: 'https://me.tbtestsite.com/wp-json/wp-api-menus/v2/menus/3',
   dataType: 'json',
   success: function(data) {
 
@@ -112,7 +112,7 @@ function getPosts() {
 
   $.ajax({
     method: 'GET',
-    url:'http://me.tbtestsite.com/wp-json/wp/v2/posts?orderby=date&order=desc&per_page=3',
+    url:'https://me.tbtestsite.com/wp-json/wp/v2/posts?orderby=date&order=desc&per_page=3',
     dataType: 'json',
     success: function (data) {
       $("#latestPosts").html('<p id="postLdr"><i class="fa fa-cogs"></i>Loading Posts</p>');
